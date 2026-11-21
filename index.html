@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayyab Khan | Frontend & WordPress Developer</title>
+    <meta name="description" content="Portfolio of Tayyab Khan - Frontend & WordPress Developer based in Karachi, Pakistan. Fast, responsive, and modern websites.">
+    
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Interactive Cursor Follower -->
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+    <div class="custom-cursor-outline" id="cursor-outline"></div>
+    <div class="cursor-ambient-glow" id="cursor-glow"></div>
+
+    <!-- Top Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">Portfolio<span class="accent-dot">.</span></span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions-mobile">
+                    <a href="#contact" class="btn btn-primary btn-sm">Let's Take</a>
+                </div>
+            </nav>
+
+            <div class="header-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+
+                <a href="#contact" class="btn btn-primary btn-nav">Let's Take</a>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg-glow glow-1"></div>
+            <div class="hero-bg-glow glow-2"></div>
+            
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-indicator"></span>
+                        <span>Available for Freelance & Full-time</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Tayyab Khan</span>
+                    </h1>
+                    
+                    <div class="hero-role-wrapper">
+                        <h2 class="hero-role">Frontend & WordPress Developer</h2>
+                    </div>
+
+                    <p class="hero-tagline">
+                        "I design and build fast, responsive, and modern websites for clients worldwide."
+                    </p>
+
+                    <div class="hero-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Karachi, Pakistan</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <button id="download-cv-btn" class="btn btn-secondary">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Download CV</span>
+                        </button>
+                        <a href="https://wa.me/923152748320" target="_blank" class="btn btn-whatsapp" aria-label="Chat on WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://www.linkedin.com/in/muhammad-tayyab-undefined-784a75448" target="_blank" class="social-icon" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:muhammadtayyabkhan679@gmail.com" class="social-icon" title="Email" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/923152748320" target="_blank" class="social-icon" title="WhatsApp" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-container">
+                        <div class="image-border-glow"></div>
+                        <div class="image-inner">
+                            <img src="assest/my pic.jpeg" alt="Tayyab Khan - Frontend & WordPress Developer" class="profile-img">
+                        </div>
+                    </div>
+
+                    <!-- Achievement Badges Placed Underneath The Picture -->
+                    <div class="hero-badges-bottom">
+                        <div class="hero-sub-badge">
+                            <div class="badge-icon icon-projects">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div class="badge-info">
+                                <span class="badge-num">10+</span>
+                                <span class="badge-text">Projects Done</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-sub-badge">
+                            <div class="badge-icon icon-exp">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                            </div>
+                            <div class="badge-info">
+                                <span class="badge-num">6+ Mo</span>
+                                <span class="badge-text">Experience</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-sub-badge">
+                            <div class="badge-icon icon-wp">
+                                <i class="fa-brands fa-wordpress-simple"></i>
+                            </div>
+                            <div class="badge-info">
+                                <span class="badge-num">OceanWP</span>
+                                <span class="badge-text">WP Specialist</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Bar -->
+        <section class="stats-bar">
+            <div class="container stats-container">
+                <div class="stat-item">
+                    <h3 class="stat-number">10<span class="accent-plus">+</span></h3>
+                    <p class="stat-title">Completed Projects</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3 class="stat-number">6<span class="accent-plus">+</span></h3>
+                    <p class="stat-title">Months Hands-on Experience</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3 class="stat-number">50<span class="accent-plus">%</span></h3>
+                    <p class="stat-title">Client Satisfaction</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3 class="stat-number">24<span class="accent-plus">/7</span></h3>
+                    <p class="stat-title">Fast Communication</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">WHO I AM</span>
+                    <h2 class="section-title">About <span class="gradient-text">Tayyab Khan</span></h2>
+                    <p class="section-subtitle">Dedicated developer crafting modern, high-converting digital experiences</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card about-story">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <h3>Professional Overview</h3>
+                        <p>
+                            I am a passionate <strong>Frontend & WordPress Developer</strong> based in <strong>Karachi, Pakistan</strong>. 
+                            With over 6 months of active hands-on development experience, I have successfully delivered <strong>10+ projects</strong> 
+                            ranging from bespoke business websites and portfolio showcases to full-featured e-commerce stores.
+                        </p>
+                        <p>
+                            My approach combines aesthetic elegance with clean, maintainable code. Whether building high-performance 
+                            WordPress websites with the OceanWP theme and Elementor or crafting custom responsive frontend code using 
+                            HTML5, modern CSS3, and JavaScript, I ensure every website loads fast and drives results.
+                        </p>
+                        <div class="about-details-list">
+                            <div class="detail-item">
+                                <span class="detail-label">Name:</span>
+                                <span class="detail-value">Tayyab Khan</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Location:</span>
+                                <span class="detail-value">Karachi, Pakistan</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Email:</span>
+                                <span class="detail-value">muhammadtayyabkhan679@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Phone:</span>
+                                <span class="detail-value">03152748320</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cards-column">
+                        <div class="about-card highlight-card">
+                            <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <h4>Fast & High Performance</h4>
+                            <p>Optimized image loading, lightweight code, and caching strategies ensure websites score high on Core Web Vitals.</p>
+                        </div>
+                        <div class="about-card highlight-card">
+                            <div class="card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <h4>100% Mobile Responsive</h4>
+                            <p>Seamlessly looks and operates across smartphones, tablets, laptops, and ultra-wide displays.</p>
+                        </div>
+                        <div class="about-card highlight-card">
+                            <div class="card-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                            <h4>E-Commerce & Custom Solutions</h4>
+                            <p>End-to-end WooCommerce setups, product listings, payment integrations, and custom OceanWP customization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">WHAT I OFFER</span>
+                    <h2 class="section-title">Specialized <span class="gradient-text">Services</span></h2>
+                    <p class="section-subtitle">Tailored solutions built to empower businesses and individuals</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Web Design / Development</h3>
+                        <p class="service-desc">
+                            Clean, structured, and modern website development from scratch or Figma designs using pure HTML5, CSS3, and JavaScript with engaging UI/UX.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Pixel-perfect semantic code</li>
+                            <li><i class="fa-solid fa-check"></i> Interactive UI components</li>
+                            <li><i class="fa-solid fa-check"></i> Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-laptop-mobile fa-display"></i>
+                        </div>
+                        <h3 class="service-title">Responsive Design</h3>
+                        <p class="service-desc">
+                            Adaptive layouts that conform perfectly to all device screen resolutions, ensuring effortless navigation and high retention for visitors.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Mobile-first architecture</li>
+                            <li><i class="fa-solid fa-check"></i> Fluid typography & media queries</li>
+                            <li><i class="fa-solid fa-check"></i> Touch-friendly navigation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <h3 class="service-title">E-Commerce & Custom Solutions</h3>
+                        <p class="service-desc">
+                            Complete online stores equipped with product showcases, inventory setup, cart systems, payment gateways, and order management.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> WooCommerce store setup</li>
+                            <li><i class="fa-solid fa-check"></i> Secure checkout integration</li>
+                            <li><i class="fa-solid fa-check"></i> Product filtering & search</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="fa-brands fa-wordpress"></i>
+                        </div>
+                        <h3 class="service-title">WordPress & OceanWP Theme Customization</h3>
+                        <p class="service-desc">
+                            Expertise in OceanWP theme configuration, Ocean Extra, Elementor builder, plugin integration, and performance tuning.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> OceanWP theme setup & customization</li>
+                            <li><i class="fa-solid fa-check"></i> Elementor drag & drop design</li>
+                            <li><i class="fa-solid fa-check"></i> Speed & SEO optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">MY TECH STACK</span>
+                    <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+                    <p class="section-subtitle">The tools and languages I utilize to bring digital concepts to life</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- HTML5 -->
+                    <div class="skill-card">
+                        <div class="skill-icon html"><i class="fa-brands fa-html5"></i></div>
+                        <h4 class="skill-name">HTML5</h4>
+                        <span class="skill-level">Semantic & Accessible</span>
+                        <div class="skill-progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="skill-card">
+                        <div class="skill-icon css"><i class="fa-brands fa-css3-alt"></i></div>
+                        <h4 class="skill-name">CSS3</h4>
+                        <span class="skill-level">Flexbox, Grid & Animations</span>
+                        <div class="skill-progress-bar">
+                            <div class="progress" style="width: 92%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card">
+                        <div class="skill-icon js"><i class="fa-brands fa-js"></i></div>
+                        <h4 class="skill-name">JavaScript</h4>
+                        <span class="skill-level">DOM, ES6+, Async logic</span>
+                        <div class="skill-progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- React -->
+                    <div class="skill-card">
+                        <div class="skill-icon react"><i class="fa-brands fa-react"></i></div>
+                        <h4 class="skill-name">React</h4>
+                        <span class="skill-level">Components, Hooks & State</span>
+                        <div class="skill-progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- WordPress -->
+                    <div class="skill-card">
+                        <div class="skill-icon wp"><i class="fa-brands fa-wordpress"></i></div>
+                        <h4 class="skill-name">WordPress</h4>
+                        <span class="skill-level">OceanWP, Elementor & Themes</span>
+                        <div class="skill-progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Responsive Design -->
+                    <div class="skill-card">
+                        <div class="skill-icon responsive"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <h4 class="skill-name">Responsive Design</h4>
+                        <span class="skill-level">Mobile First Layouts</span>
+                        <div class="skill-progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- E-Commerce / WooCommerce -->
+                    <div class="skill-card">
+                        <div class="skill-icon woo"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <h4 class="skill-name">WooCommerce</h4>
+                        <span class="skill-level">Stores, Products & Gateways</span>
+                        <div class="skill-progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- VS Code -->
+                    <div class="skill-card">
+                        <div class="skill-icon vscode"><i class="fa-solid fa-terminal"></i></div>
+                        <h4 class="skill-name">VS Code & DevTools</h4>
+                        <span class="skill-level">Debugging & Code Workflow</span>
+                        <div class="skill-progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (10 Projects) -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">PORTFOLIO SHOWCASE</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">Explore 10 curated project cards showcasing Frontend, WordPress & E-Commerce work</p>
+                </div>
+
+                <!-- Project Category Filter Buttons -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects (10)</button>
+                    <button class="filter-btn" data-filter="wordpress">WordPress & OceanWP</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend & React</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="ecommerce wordpress">
+                        <div class="project-img-box">
+                            <img src="assest/irhas.png" alt="Irhas Fashion & Apparel Store" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-light open-modal" data-id="1">View Details</button>
+                            </div>
+                            <span class="project-tag">E-Commerce</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Irhas Fashion & Apparel</h3>
+                            <p class="project-desc">A full-scale fashion eCommerce store with responsive catalog, WooCommerce checkout, and lightning-fast loading.</p>
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>WooCommerce</span>
+                                <span>OceanWP</span>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#contact" class="link-item"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Request</a>
+                                <button class="open-modal text-link" data-id="1">Quick View</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-img-box">
+                            <img src="assest/Screenshot 2026-11-19 183421(1).png" alt="Interactive Chessboard UI" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-light open-modal" data-id="2">View Details</button>
+                            </div>
+                            <span class="project-tag">Frontend</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Interactive Chessboard UI</h3>
+                            <p class="project-desc">A responsive and clean chessboard interface built with semantic HTML5, CSS3 Grid layout, and interactive JavaScript features.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3 Grid</span>
+                                <span>JavaScript</span>
+                                <span>UI/UX</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#contact" class="link-item"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Request</a>
+                                <button class="open-modal text-link" data-id="2">Quick View</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="wordpress">
+                        <div class="project-img-box">
+                            <img src="assest/KOFA.jpeg" alt="KOFA Corporate Business Platform" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-light open-modal" data-id="3">View Details</button>
+                            </div>
+                            <span class="project-tag">WordPress</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">KOFA Corporate Enterprise</h3>
+                            <p class="project-desc">Corporate consulting website built with OceanWP and Elementor, tailored for enterprise clients and lead capture.</p>
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>OceanWP</span>
+                                <span>Elementor</span>
+                                <span>SEO</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#contact" class="link-item"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Request</a>
+                                <button class="open-modal text-link" data-id="3">Quick View</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-img-box">
+                            <img src="assest/MY olx.png" alt="My OLX Classifieds & Marketplace" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-light open-modal" data-id="4">View Details</button>
+                            </div>
+                            <span class="project-tag">Frontend & Web App</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">My OLX Marketplace</h3>
+                            <p class="project-desc">Interactive classifieds and marketplace web app with dynamic product listings, search filters, and responsive modern layout.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>JavaScript ES6</span>
+                                <span>CSS3 Modules</span>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#contact" class="link-item"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Request</a>
+                                <button class="open-modal text-link" data-id="4">Quick View</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card" data-category="wordpress">
+                        <div class="project-img-box">
+                            <img src="assest/SUNRISE.jpeg" alt="Sunrise Living & Real Estate" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-light open-modal" data-id="5">View Details</button>
+                            </div>
+                            <span class="project-tag">WordPress</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Sunrise Living & Estates</h3>
+                            <p class="project-desc">Real estate property showcase with custom search filters, interactive property cards, and agent contact inquiry forms.</p>
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>OceanWP</span>
+                                <span>Custom Fields</span>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#contact" class="link-item"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Request</a>
+                                <button class="open-modal text-link" data-id="5">Quick View</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-img-box">
+                            <img src="assest/tasty food.png" alt="Tasty Food Restaurant & Cafe" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-light open-modal" data-id="6">View Details</button>
+                            </div>
+                            <span class="project-tag">Frontend</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Tasty Food Restaurant</h3>
+                            <p class="project-desc">Elegant restaurant landing page featuring interactive food menus, table reservation module, and customer reviews slider.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Flexbox</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#contact" class="link-item"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Request</a>
+                                <button class="open-modal text-link" data-id="6">Quick View</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 7 -->
+                    <article class="project-card" data-category="ecommerce wordpress">
+                        <div class="project-img-box">
+                            <img src="assest/red store.png" alt="RedStore Online E-Commerce" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-light open-modal" data-id="7">View Details</button>
+                            </div>
+                            <span class="project-tag">E-Commerce</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">RedStore E-Commerce</h3>
+                            <p class="project-desc">High-speed online shopping marketplace with category filters, shopping cart, instant stock status, and frictionless checkout.</p>
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>WooCommerce</span>
+                                <span>Payment API</span>
+                                <span>Speed Opt</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#contact" class="link-item"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Request</a>
+                                <button class="open-modal text-link" data-id="7">Quick View</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 8 -->
+                    <article class="project-card" data-category="ecommerce wordpress">
+                        <div class="project-img-box">
+                            <img src="assest/urban thread.png" alt="Urban Thread Apparel & Fashion" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-light open-modal" data-id="8">View Details</button>
+                            </div>
+                            <span class="project-tag">WordPress & Fashion</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Urban Thread Apparel</h3>
+                            <p class="project-desc">Modern clothing and fashion brand store with curated lookbooks, seasonal collections, and optimized conversion flow.</p>
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>OceanWP</span>
+                                <span>WooCommerce</span>
+                                <span>Elementor</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#contact" class="link-item"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Request</a>
+                                <button class="open-modal text-link" data-id="8">Quick View</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 9 -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-img-box">
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=80" alt="Fitness & Gym Club" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-light open-modal" data-id="9">View Details</button>
+                            </div>
+                            <span class="project-tag">Frontend</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">IronCore Fitness Studio</h3>
+                            <p class="project-desc">High-energy fitness & training gym landing page with dynamic BMI calculator, timetable schedules, and membership tiers.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3 Animation</span>
+                                <span>JavaScript</span>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#contact" class="link-item"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Request</a>
+                                <button class="open-modal text-link" data-id="9">Quick View</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 10 -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-img-box">
+                            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=700&q=80" alt="Personal Creator Portfolio" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-light open-modal" data-id="10">View Details</button>
+                            </div>
+                            <span class="project-tag">Frontend & React</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Minimalist Dev Portfolio</h3>
+                            <p class="project-desc">Clean, ultra-fast portfolio template for creative engineers with custom theme switcher, filterable gallery, and smooth scroll.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3 Variables</span>
+                                <span>JavaScript ES6</span>
+                                <span>React Ready</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#contact" class="link-item"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Request</a>
+                                <button class="open-modal text-link" data-id="10">Quick View</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Process / Why Choose Me -->
+        <section class="section process-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">MY WORK PROCESS</span>
+                    <h2 class="section-title">How I Build <span class="gradient-text">Great Websites</span></h2>
+                    <p class="section-subtitle">Structured workflow ensuring high speed, clean code, and client satisfaction</p>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-num">01</div>
+                        <h3>Discovery & Planning</h3>
+                        <p>Understanding your business requirements, target audience, and layout inspirations like OceanWP.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">02</div>
+                        <h3>Design & Wireframing</h3>
+                        <p>Drafting responsive wireframes and selecting modern typography, color palettes, and assets.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">03</div>
+                        <h3>Clean Development</h3>
+                        <p>Writing clean, semantic HTML/CSS/JS or configuring WordPress with OceanWP and Elementor.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">04</div>
+                        <h3>Testing & Delivery</h3>
+                        <p>Cross-device testing, speed audits, SEO check, and smooth deployment ready for clients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">GET IN TOUCH</span>
+                    <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+                    <p class="section-subtitle">Have a project in mind or looking for a skilled Frontend & WordPress Developer? Reach out!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Cards -->
+                    <div class="contact-info-panel">
+                        <h3>Contact Information</h3>
+                        <p class="contact-lead-text">
+                            I'm always open to discussing new web development projects, freelance opportunities, or full-time roles.
+                        </p>
+
+                        <div class="contact-info-list">
+                            <a href="mailto:muhammadtayyabkhan679@gmail.com" class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="info-title">Email Me</span>
+                                    <span class="info-detail">muhammadtayyabkhan679@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/923152748320" target="_blank" class="info-item">
+                                <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div>
+                                    <span class="info-title">Phone / WhatsApp</span>
+                                    <span class="info-detail">03152748320 (+92 315 2748320)</span>
+                                </div>
+                            </a>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="info-title">Location</span>
+                                    <span class="info-detail">Karachi, Pakistan</span>
+                                </div>
+                            </div>
+
+                            <a href="https://www.linkedin.com/in/muhammad-tayyab-undefined-784a75448" target="_blank" class="info-item">
+                                <div class="info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div>
+                                    <span class="info-title">LinkedIn Profile</span>
+                                    <span class="info-detail">Connect on LinkedIn</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Direct WhatsApp Box -->
+                        <div class="whatsapp-direct-card">
+                            <div class="wa-content">
+                                <h4>Quick Response via WhatsApp</h4>
+                                <p>Message directly for instant consultation on your project.</p>
+                            </div>
+                            <a href="https://wa.me/923152748320" target="_blank" class="btn btn-whatsapp-card">
+                                <i class="fa-brands fa-whatsapp"></i> Chat Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel">
+                        <form id="contact-form" class="contact-form">
+                            <h3>Send a Message</h3>
+                            
+                            <div class="form-group">
+                                <label for="user-name">Your Full Name</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" id="user-name" name="name" placeholder="John Doe" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-email">Your Email Address</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" id="user-email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-subject">Project Subject / Service</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <input type="text" id="user-subject" name="subject" placeholder="WordPress Website, Frontend Project, E-Commerce..." required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-message">Project Details</label>
+                                <div class="input-with-icon textarea-icon">
+                                    <i class="fa-solid fa-message"></i>
+                                    <textarea id="user-message" name="message" rows="5" placeholder="Tell me about your project, timeline, and requirements..." required></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            
+                            <div id="form-feedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Quick View Modal -->
+    <div class="modal-overlay" id="project-modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamically populated via script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CV Modal / Printable Preview -->
+    <div class="modal-overlay" id="cv-modal" aria-hidden="true">
+        <div class="modal-content cv-modal-content">
+            <button class="modal-close-btn" id="cv-modal-close" aria-label="Close modal">&times;</button>
+            <div class="cv-preview">
+                <div class="cv-header">
+                    <h2>Tayyab Khan</h2>
+                    <p class="cv-subtitle">Frontend & WordPress Developer</p>
+                    <div class="cv-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</span>
+                        <span><i class="fa-solid fa-envelope"></i> muhammadtayyabkhan679@gmail.com</span>
+                        <span><i class="fa-brands fa-whatsapp"></i> 03152748320</span>
+                    </div>
+                </div>
+
+                <div class="cv-section">
+                    <h3>Professional Summary</h3>
+                    <p>Dedicated and results-oriented Frontend & WordPress Developer with 6+ months of practical experience and 10+ delivered web projects. Skilled in HTML5, CSS3, JavaScript, React, WordPress OceanWP theme customization, Elementor, and WooCommerce store creation.</p>
+                </div>
+
+                <div class="cv-section">
+                    <h3>Core Technical Skills</h3>
+                    <ul class="cv-skills-list">
+                        <li><strong>Frontend:</strong> HTML5, CSS3 (Grid, Flexbox, Animations), JavaScript (ES6+), React.js</li>
+                        <li><strong>CMS & Web:</strong> WordPress, OceanWP Theme, Elementor, WooCommerce, Responsive Web Design</li>
+                        <li><strong>Tools:</strong> VS Code, Git/GitHub, Chrome DevTools</li>
+                    </ul>
+                </div>
+
+                <div class="cv-section">
+                    <h3>Key Highlights & Track Record</h3>
+                    <p>• Successfully completed 10+ full client and practice web projects.</p>
+                    <p>• Engineered mobile-first, high-performance web experiences with 100% responsive cross-device layout fidelity.</p>
+                    <p>• Configured end-to-end e-commerce solutions with checkout and product management.</p>
+                </div>
+
+                <div class="cv-actions">
+                    <button class="btn btn-primary" id="print-cv-btn">
+                        <i class="fa-solid fa-print"></i> Print / Save as PDF
+                    </button>
+                    <a href="mailto:muhammadtayyabkhan679@gmail.com?subject=Job%20Inquiry%20for%20Tayyab%20Khan" class="btn btn-secondary">
+                        <i class="fa-solid fa-paper-plane"></i> Contact Tayyab
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-text">Portfolio<span class="accent-dot">.</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Designing and building fast, responsive, and modern websites for clients worldwide.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social-column">
+                    <h4>Connect</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://www.linkedin.com/in/muhammad-tayyab-undefined-784a75448" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/923152748320" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:muhammadtayyabkhan679@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tayyab Khan. All rights reserved. Built with pure HTML, CSS & JavaScript.</p>
+                <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
